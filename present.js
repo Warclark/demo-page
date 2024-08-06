@@ -2241,7 +2241,7 @@ window.onload = function () {
 
         isNmPlugin = true;
         if (performCheck && (isChrome || isFirefox)) {
-            //console.log("isExtensionInstalled", isExtensionInstalled);
+            console.log("isExtensionInstalled", isExtensionInstalled);
             return rutoken.isExtensionInstalled();
         } else {
             isNmPlugin = false;
@@ -2249,7 +2249,7 @@ window.onload = function () {
         }
     }).then(function (result) {
         if (result) {
-            //console.log("isPluginInstalled", isPluginInstalled);
+            console.log("isPluginInstalled", isPluginInstalled);
             return rutoken.isPluginInstalled();
         } else {
             var msg = "Расширение \"Адаптер Рутокен Плагин\" не установлено";
