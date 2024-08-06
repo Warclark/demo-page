@@ -2259,6 +2259,13 @@ window.onload = function () {
 
             throw msg;
         }
+    }).then(function (result) {
+        if (result) {
+            //console.log("loadPlugin", result);
+            return rutoken.loadPlugin();
+        } else {
+            throw "Рутокен Плагин не установлен";
+        }
     }).then(function (plugin) {
         onPluginLoaded(plugin);
     }).then(undefined, function (reason) {
