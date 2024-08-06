@@ -40,6 +40,27 @@ var rutoken = function(n) {
         }
         )
     }
+    function loadPlugin() {
+        var t = document.createElement("object");
+        return t.style.setProperty("visibility", "hidden", "important"),
+        t.style.setProperty("width", "0px", "important"),
+        t.style.setProperty("height", "0px", "important"),
+        t.style.setProperty("margin", "0px", "important"),
+        t.style.setProperty("padding", "0px", "important"),
+        t.style.setProperty("border-style", "none", "important"),
+        t.style.setProperty("border-width", "0px", "important"),
+        t.style.setProperty("max-width", "0px", "important"),
+        t.style.setProperty("max-height", "0px", "important"),
+        t.innerHTML = "<param name='onload' value='rutokenLoaded'/>",
+        t.setAttribute("type", r),
+        document.body.appendChild(t),
+        new Promise(function(t, n) {
+            e.push(t)
+        }
+        )
+    }
+
+
     function p() {
         return i.loadPlugin().then(function e(r) {
             var i = {};
