@@ -2262,9 +2262,9 @@ window.onload = function () {
     }).then(function (result) {
         if (result) {
             //console.log("loadPlugin", result);
-            return rutoken.loadPlugin();
+            return rutoken.loadPlugin();    
         } else {
-            throw "Рутокен Плагин не установлен";
+            throw "Рутокен Плагин не найден";
         }
     }).then(function (plugin) {
         onPluginLoaded(plugin);
