@@ -2261,8 +2261,8 @@ window.onload = function () {
         }
     }).then(function (result) {
         if (result) {
-            
-            return rutoken.loadPlugin();
+            console.log("loadPlugin", result);
+            return rutoken.a();
         } else {
             throw "Рутокен Плагин не установлен";
         }
