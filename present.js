@@ -1,4 +1,4 @@
-
+ 
 function testUi(useConsole) {
     this.controls = new uiControls();
     this.console = $("#console");

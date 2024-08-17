@@ -1,3 +1,4 @@
+
 function base64ToUint8Buffer(base64) {
     var binary_string = window.atob(base64);
     var len = binary_string.length;
